@@ -6,7 +6,7 @@ export const Hero = () => {
           Mostafa Abdelghafar
         </h1>
         <p className="text-xl md:text-2xl opacity-95 animate-slide-in-right">
-          Market Research Analyst & Data Analyst Portfolio
+          Market Research Analyst & Data Analyst
         </p>
       </div>
     </header>

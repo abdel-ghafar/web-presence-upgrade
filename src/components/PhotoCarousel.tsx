@@ -2,13 +2,16 @@ import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-// Placeholder images - you can replace these with actual image URLs
 const photos = [
-  "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80",
-  "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800&q=80",
-  "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&q=80",
-  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
-  "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&q=80",
+  "/images/photo1.jpg",
+  "/images/photo2.jpg",
+  "/images/photo3.jpg",
+  "/images/photo4.jpg",
+  "/images/photo5.jpg",
+  "/images/photo6.jpg",
+  "/images/photo7.jpg",
+  "/images/photo8.jpg",
+  "/images/photo9.jpg",
 ];
 
 export const PhotoCarousel = () => {

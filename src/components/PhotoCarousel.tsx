@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const photos = [
   "/images/photo1.jpg",
@@ -34,13 +35,15 @@ export const PhotoCarousel = () => {
 
   return (
     <div className="relative max-w-3xl mx-auto my-8 rounded-2xl overflow-hidden shadow-elegant group">
-      <div className="relative h-96 md:h-[500px] bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-        <img
-          src={photos[currentIndex]}
-          alt="Mostafa Abdelghafar"
-          className="max-w-full max-h-full object-contain transition-opacity duration-500"
-        />
-      </div>
+      <AspectRatio ratio={4 / 5}>
+        <div className="relative w-full h-full bg-card flex items-center justify-center">
+          <img
+            src={photos[currentIndex]}
+            alt="Mostafa Abdelghafar"
+            className="w-full h-full object-contain transition-opacity duration-500"
+          />
+        </div>
+      </AspectRatio>
 
       <Button
         variant="ghost"

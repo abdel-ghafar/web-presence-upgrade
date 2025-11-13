@@ -34,11 +34,11 @@ export const PhotoCarousel = () => {
 
   return (
     <div className="relative max-w-3xl mx-auto my-8 rounded-2xl overflow-hidden shadow-elegant group">
-      <div className="relative h-96 md:h-[500px] bg-gradient-to-br from-primary to-accent">
+      <div className="relative h-96 md:h-[500px] bg-gradient-to-br from-primary to-accent flex items-center justify-center">
         <img
           src={photos[currentIndex]}
           alt="Mostafa Abdelghafar"
-          className="w-full h-full object-cover transition-opacity duration-500"
+          className="max-w-full max-h-full object-contain transition-opacity duration-500"
         />
       </div>
 
